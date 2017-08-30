@@ -1,0 +1,23 @@
+module.exports={
+	development:{
+		db:"mongodb://localhost:27017/meet",
+		port:9000,
+		url:"http://localhost:9000/event/",
+		emailHost:"smtp.mailgun.org",
+		emailPort:"465",
+		emailUser:"",
+		emailPass:"",
+		googleCalenderLink:"https://calendar.google.com/calendar/render?action=TEMPLATE&text=",
+		host:"http://localhost:9000"
+	},
+	production:{
+		db:"mongodb://localhost:27017/meet",
+		port:9000,
+		url:"https://www.letusmeetup.com/event/",
+		emailHost:"smtp.mailgun.org",
+		emailPort:"465",
+		emailUser:"",
+		emailPass:"",
+		googleCalenderLink:"https://calendar.google.com/calendar/render?action=TEMPLATE&text="
+	}
+};

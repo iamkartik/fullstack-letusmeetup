@@ -1,0 +1,28 @@
+{
+  "name": "meetup",
+  "version": "1.0.0",
+  "description": "let's meet up",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iamkartik",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "consolidate": "^0.14.0",
+    "express": "^4.13.4",
+    "grunt": "^1.0.1",
+    "handlebars": "^4.0.10",
+    "http": "0.0.0",
+    "microseconds": "^0.1.0",
+    "moment": "^2.13.0",
+    "moment-timezone": "^0.5.4",
+    "mongoose": "^4.4.8",
+    "nodemailer": "^4.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300' type='text/css'>    
+    <title>letsmeetup</title>
+    
+</head>
+<body>
+    <div class="heading">
+        LET<span>US</span>MEET<span>UP</span>
+    </div>
+    <div class="form">
+        <form name="eventForm">
+            <div class="rowContainer">
+                <input type="text" placeholder="Give your event a sweet name" id="ename" name="ename" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/></svg>
+            </div>
+            <div class="rowContainer" >
+                <input type="text" placeholder="The point man or woman" name="creator" id="creator" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/></svg>
+            </div>
+            <div class="rowContainer" >
+                <input type="text" id="date" placeholder="it's happening! But when ?" name="date" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/></svg>
+            </div>
+            <div class="rowContainer" >
+                <input type="text" id="time" placeholder="A good time to suit the occasion" name="time" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/></svg>
+            </div> 
+            <div class="rowContainer" >
+                <input type="text" placeholder="A fantastic place to go along" id="venue" name="venue" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/></svg>
+            </div>
+       
+            <div class="rowContainer" >
+                <input type="email" placeholder="Your email if you want notifications (optional)" id="email" minlength="10" maxlength="100" name="email" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/></svg>
+            </div>
+            <button id="create">Create</button>
+        </form>
+        <div class="eventLink">
+            <span id="linkTitle">Spread the word!!</span>
+            <span id="link" contenteditable="true"></span>
+        </div>        
+    </div>
+</body>
+<link rel="stylesheet" href={{url}}/public/css/dark.css>
+<link rel="stylesheet" href={{url}}/public/css/main.css>
+<script type="text/javascript" src={{url}}/public/js/moment.min.js></script>
+<script type="text/javascript" src={{url}}/public/js/flatpickr.min.js></script>
+<script type="text/javascript" src={{url}}/public/js/app.js></script>
+<script>window.addEventListener('load',createPage());</script>
+</html>

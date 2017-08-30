@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300' rel='stylesheet' type='text/css'>  
+    <link rel="stylesheet" href={{url}}/public/css/main.css>
+    <title>letsmeetup</title>
+</head>
+
+<body>
+    <div class="heading">
+        LET<span>US</span>MEET<span>UP</span>
+    </div>
+    <div class="eventDetais">
+        <div id="eventText">
+            <p><span class="eventData">{{organizer}}</span> invites you to <span class="eventData"> {{eventName}}</span><br>
+            happening at <span class="eventData">{{location}}</span> on <span class="eventData">{{date}} - {{time}} </span>.<br>
+            Would you like to join ?</p>
+        </div>
+
+        <div id="confirmButton">
+            <button id="attend">Yes</button>
+            <button id="decline">No</button>
+        </div>
+        <div class="attendance">
+            <p><span class="show">Show</span> me who all are attending</p>
+            <span class="attendees">{{attendees}}</span>
+        </div>    
+        <form class="confirmForm">
+            <input type="text" id="name" placeholder="Add your name to list" required> 
+            <input type="email" placeholder="Your email if you want notifications (optional)" id="email"
+                   minlength="10" maxlength="100"
+                   pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+            <button id="submitEmail" >Submit</button>
+        </form>
+
+        <div class="message" id="nothanks">
+            <p>Thanks for showing interest ... Visit the page again if you change your mind.</p>
+        </div>
+        <div class="message" id="thanks">
+            <p>Thanks for showing interest , your name has been added to the list.</p>  
+        </div>
+    </div>    
+
+</body>
+<script type="text/javascript" src={{url}}/public/js/app.js></script>
+<script>window.addEventListener('load',eventPage());</script>
+</html>

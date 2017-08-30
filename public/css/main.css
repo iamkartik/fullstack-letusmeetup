@@ -1,0 +1,193 @@
+/**{
+	border: 1px solid red;
+}*/
+html{
+	box-sizing: border-box;
+	background: #373E48;
+	font-size: 10px;
+}
+*,*::before,*::after{
+	box-sizing: inherit;
+}
+body{
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: transparent;
+	min-height: 100vh;
+}
+.heading{
+	color: white;
+	font-size: 60px;
+	margin:20px; 
+	margin-top: -5px;
+}
+.heading span{
+	color: #a29e9e;
+}
+#eventForm{
+	display:block;
+	margin-top: 5%;
+	color: white;
+}
+.rowContainer input,
+.confirmForm input{
+	min-width: 350px;
+	margin: 10px;
+	line-height: 2.5;
+	background: transparent;
+	color: white;
+	border: 0;
+	border-bottom: 1px solid white;
+	transition: opacity 1s;
+	opacity: 0;
+	font-size: 1.7rem;
+}
+.rowContainer input:focus,
+.confirmForm input:focus{
+	border: 0;
+	border-color: transparent;
+	outline: none;
+	border-bottom: 1px solid white;
+}
+.rowContainer input::-webkit-input-placeholder,
+.confirmForm input::-webkit-input-placeholder{
+	color: rgba(255, 255, 255, 0.6);
+}
+.rowContainer input::-moz-placeholder,
+.confirmForm input::-moz-placeholder { 
+  color:rgba(255, 255, 255, 0.6);
+}
+.rowContainer input::-ms-input-placeholder,
+.confirmForm input::-ms-input-placeholder { 
+  color:rgba(255, 255, 255, 0.6);
+}
+svg{
+	fill: white;
+	transition: all 0.5s;
+	transform: scale(0);
+	max-width: 24px;
+	max-height: 24px;
+}
+.filled + svg{
+	transform: scale(1);
+}
+
+#ename{
+	opacity: 1;
+}
+#create{
+	min-width: 100px;
+	margin: 10px auto;
+	display: block;
+	min-height: 40px;
+	border-radius: 5px;
+	box-shadow: 3px 2px 3px rgba(0,0,0,0.3);
+	background: #373E48;
+	border:1px solid #54B689;
+	color: white;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.eventLink{
+	display: inline-block;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 0;
+	transition: opacity 1s;
+}
+#linkTitle{
+	padding: 5px;
+	color: white;
+	font-size: 20px;
+}
+#link{
+	padding: 5px;
+	color: white;
+	font-size: 20px;
+}
+.eventDetais{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+#eventText{
+	min-height: 30vh;
+	color: white;
+	font-size: 2.5rem;
+	display: flex;
+	align-items: center;
+}
+.eventData{
+	color: #a29e9e;
+	text-transform: capitalize;
+}
+#attend,#decline,#submitEmail{
+	min-width: 100px;
+	margin: 10px auto;
+	display:inline-block;
+	min-height: 40px;
+	border-radius: 5px;
+	box-shadow: 3px 2px 3px rgba(0,0,0,0.3);
+	background: #373E48;
+	border:1px solid #54B689;
+	color: white;
+	cursor: pointer;
+}
+#attend{
+	margin-right: 50px;
+}
+#decline{
+	border:1px solid #ec3e3e;
+}
+.attendance{
+	color: white;
+	font-size: 2.5rem;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.confirmForm{
+	display: none;
+}
+.confirmForm input{
+	opacity: 1;
+	transition: none;
+	display: block;
+	margin:10px auto;
+}
+#submitEmail{
+	display: block;
+}
+.message{
+	color: white;
+	font-size: 2rem;
+	display: none;
+}
+.show{
+	color: #a29e9e;
+	text-transform: capitalize;
+	border-bottom: 1px dashed white;
+	cursor: pointer;
+}
+.attendees{
+	display: none;
+}
+/* overriding the calendar color theme  */
+.flatpickr-calendar{
+    background: rgba(38, 43, 49, 0.96);
+}
+span.flatpickr-weekday{
+	color: white;
+}
+.flatpickr-prev-month>svg,
+.flatpickr-next-month>svg{
+	fill: white;
+	transform: scale(1);
+}
